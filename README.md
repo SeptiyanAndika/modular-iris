@@ -1,5 +1,5 @@
 # modular-iris
-> Is a simple example iris framework with modular implementation
+> Is a simple example iris framework with modular implementation, use a glide (https://github.com/Masterminds/glide) for package management
 
 ### Install Modules
 ```go
