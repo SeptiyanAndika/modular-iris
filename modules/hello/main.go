@@ -2,7 +2,7 @@ package hello
 
 import "gopkg.in/kataras/iris.v6"
 
-//Install in apps
+//Install i
 func Install(app *iris.Framework) {
 
 	logic := Logic{}
