@@ -2,8 +2,7 @@
 > Is a simple example iris framework with modular implementation, use a glide (https://github.com/Masterminds/glide) for package management
 
 ### Testing
-> functional testing in each modules 
-> http testing in whole apps  (main_test.go)
+> functional testing for each modules and http/api testing for whole apps 
 
 ### Install Modules
 ```go
@@ -20,7 +19,7 @@ func main() {
  ....
 
  hello.Install(app) // install module hello
- 
+
  ....
  ....
 }
@@ -29,4 +28,4 @@ func main() {
 ### Structure Modules
 - main.go -> main modules handle route or interfacing
 - logic.go -> handle a logic of modules
-- struct.go -> collection of a struct 
+- struct.go -> collection of a struct
