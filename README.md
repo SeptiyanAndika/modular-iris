@@ -1,6 +1,10 @@
 # modular-iris
 > Is a simple example iris framework with modular implementation, use a glide (https://github.com/Masterminds/glide) for package management
 
+#Testing
+> functional testing in each modules 
+> http testing in whole apps  (main_test.go)
+
 ### Install Modules
 ```go
 

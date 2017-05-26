@@ -7,7 +7,7 @@ import (
 	"gopkg.in/kataras/iris.v6/adaptors/httprouter"
 )
 
-func main() {
+func createApp() *iris.Framework {
 	app := iris.New()
 	// Adapt the "httprouter", faster,
 	// but it has limits on named path parameters' validation,
@@ -15,8 +15,13 @@ func main() {
 	app.Adapt(httprouter.New())
 
 	app.Get("/", func(ctx *iris.Context) {
-		ctx.Writef("hello world\n")
+		ctx.Writef("hello modulars\n")
 	})
 	hello.Install(app)
+	return app
+}
+
+func main() {
+	app := createApp()
 	app.Listen(":8080")
 }
